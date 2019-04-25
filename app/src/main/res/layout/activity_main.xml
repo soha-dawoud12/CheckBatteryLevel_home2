@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/batteryTxtlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="-61dp"
+        android:text="Battery level"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/batteryTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/batteryTxtlabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/batteryTxt"
+        android:layout_marginStart="8dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="8dp" />
+
+</RelativeLayout>
